@@ -1,0 +1,20 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "1a391fa79e56efb2eb0ba4779fd30be6"
+name = "FlirtAdult-Store-custom-app-md"
+application_url = "https://flirt-adult-stor-custom-app-md-c3aedeff4f57.herokuapp.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+include_config_on_deploy = true
+
+[webhooks]
+api_version = "2026-01"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_customers,read_inventory,read_locales,read_locations,read_orders,read_product_listings,read_products,read_publications,read_script_tags,write_content,write_delivery_customizations,write_inventory,write_locations,write_products,write_publications,write_script_tags,write_shipping"
+
+[auth]
+redirect_urls = [ "https://flirt-adult-stor-custom-app-md-c3aedeff4f57.herokuapp.com/api/auth" ]
